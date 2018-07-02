@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="?attr/actionModeBackground"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/helloAppyTextView"
+        style="?android:attr/imageButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10000000dp"
+        android:layout_margin="10000000px"
+        android:background="?android:attr/colorPressedHighlight"
         android:padding="20dp"
         android:text="Hello Arpit"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="40sp"
+        app:fontFamily="@font/alegreya_sans_sc_extrabold_italic"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -20,6 +27,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="100dp"
         android:text="Button"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="292dp" />
